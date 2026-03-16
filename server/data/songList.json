@@ -1,0 +1,114 @@
+[
+  {
+    "img": "http://127.0.0.1:3000/static/song/0.png",
+    "title": "晨光破晓",
+    "artist": "歌手A",
+    "url": "http://127.0.0.1:3000/static/song/0.mp3",
+    "id": "0000"
+  },
+  {
+    "img": "http://127.0.0.1:3000/static/song/1.png",
+    "title": "梦想翱翔",
+    "artist": "歌手B",
+    "url": "http://127.0.0.1:3000/static/song/1.mp3",
+    "id": "0001"
+  },
+  {
+    "img": "http://127.0.0.1:3000/static/song/2.png",
+    "title": "心海扬帆",
+    "artist": "歌手C",
+    "url": "http://127.0.0.1:3000/static/song/2.mp3",
+    "id": "0002"
+  },
+  {
+    "img": "http://127.0.0.1:3000/static/song/3.png",
+    "title": "绽放的瞬间",
+    "artist": "歌手D",
+    "url": "http://127.0.0.1:3000/static/song/3.mp3",
+    "id": "0003"
+  },
+  {
+    "img": "http://127.0.0.1:3000/static/song/4.png",
+    "title": "微笑向阳",
+    "artist": "歌手E",
+    "url": "http://127.0.0.1:3000/static/song/4.mp3",
+    "id": "0004"
+  },
+  {
+    "img": "http://127.0.0.1:3000/static/song/5.png",
+    "title": "星光引路",
+    "artist": "歌手F",
+    "url": "http://127.0.0.1:3000/static/song/5.mp3",
+    "id": "0005"
+  },
+  {
+    "img": "http://127.0.0.1:3000/static/song/6.png",
+    "title": "逆风飞翔的翅膀",
+    "artist": "歌手G",
+    "url": "http://127.0.0.1:3000/static/song/6.mp3",
+    "id": "0006"
+  },
+  {
+    "img": "http://127.0.0.1:3000/static/song/7.png",
+    "title": "彩虹之巅",
+    "artist": "歌手H",
+    "url": "http://127.0.0.1:3000/static/song/7.mp3",
+    "id": "0007"
+  },
+  {
+    "img": "http://127.0.0.1:3000/static/song/8.png",
+    "title": "勇气乐章",
+    "artist": "歌手I",
+    "url": "http://127.0.0.1:3000/static/song/8.mp3",
+    "id": "0008"
+  },
+  {
+    "img": "http://127.0.0.1:3000/static/song/9.png",
+    "title": "时光之翼",
+    "artist": "歌手J",
+    "url": "http://127.0.0.1:3000/static/song/9.mp3",
+    "id": "0009"
+  },
+  {
+    "img": "http://127.0.0.1:3000/static/song/10.png",
+    "title": "逐梦星辰",
+    "artist": "歌手K",
+    "url": "http://127.0.0.1:3000/static/song/10.mp3",
+    "id": "0010"
+  },
+  {
+    "img": "http://127.0.0.1:3000/static/song/11.png",
+    "title": "温暖如初",
+    "artist": "歌手L",
+    "url": "http://127.0.0.1:3000/static/song/11.mp3",
+    "id": "0011"
+  },
+  {
+    "img": "http://127.0.0.1:3000/static/song/12.png",
+    "title": "快乐无界",
+    "artist": "歌手M",
+    "url": "http://127.0.0.1:3000/static/song/12.mp3",
+    "id": "0012"
+  },
+  {
+    "img": "http://127.0.0.1:3000/static/song/13.png",
+    "title": "梦开始的地方",
+    "artist": "歌手N",
+    "url": "http://127.0.0.1:3000/static/song/13.mp3",
+    "id": "0013"
+  },
+  {
+    "img": "http://127.0.0.1:3000/static/song/14.png",
+    "title": "阳光下的誓言",
+    "artist": "歌手O",
+    "url": "http://127.0.0.1:3000/static/song/14.mp3",
+    "id": "0014"
+  },
+  {
+    "img": "http://127.0.0.1:3000/static/song/15.png",
+    "title": "心灵之光",
+    "artist": "歌手P",
+    "url": "http://127.0.0.1:3000/static/song/15.mp3",
+    "id": "0015"
+  }
+]

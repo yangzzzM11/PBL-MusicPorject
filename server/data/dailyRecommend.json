@@ -1,0 +1,30 @@
+[
+  {
+    "img": "http://127.0.0.1:3000/static/dailyRecommend/recommend1.png",
+    "title": "每日推荐 | 今天从《逐梦星辰》听起 | 私人雷达",
+    "type": "每日推荐",
+    "top": "#660000",
+    "bottom": "#382e2f"
+  },
+  {
+    "img": "http://127.0.0.1:3000/static/dailyRecommend/recommend2.png",
+    "title": "从 《彩虹之巅》开启无限漫游",
+    "type": "私人漫游",
+    "top": "#382e2f",
+    "bottom": "#a37862"
+  },
+  {
+    "img": "http://127.0.0.1:3000/static/dailyRecommend/recommend3.png",
+    "title": "每日推荐 | 今天从《快乐无界》听起 | 私人雷达",
+    "type": "华语流行",
+    "top": "#a37862",
+    "bottom": "#174847"
+  },
+  {
+    "img": "http://127.0.0.1:3000/static/dailyRecommend/recommend4.png",
+    "title": "每日推荐 | 今天从《阳光下的誓言》听起 | 私人雷达",
+    "type": "私人雷达",
+    "top": "#174847",
+    "bottom": "#174847"
+  }
+]
