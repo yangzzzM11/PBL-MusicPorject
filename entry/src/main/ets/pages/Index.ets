@@ -2,7 +2,7 @@ import Recommend from '../views/Recommend';
 import Find from '../views/Find';
 import Moment from '../views/Moment';
 import Mine from '../views/Mine';
-import { TabType } from '../models';
+import { TabType } from '../models/Index';
 import { SAFE_TOP, SAFE_BOTTOM } from '../constants';
 @Entry
 @Component
