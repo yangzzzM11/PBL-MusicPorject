@@ -45,3 +45,15 @@ export class SongItem implements SongItemType {
     this.id = model.id;
   }
 }
+export class PlayState {
+  img: string = '';					// 封面图
+  title: string = '';				// 歌曲名称
+  artist: string = '';			// 艺术家
+  url: string = '';					// 歌曲URL
+  playIndex: number = 0;		// 在播放列表中的索引
+  time: number = 0; 				// 播放时间
+  duration: number = 0; 		// 歌曲时长
+  isPlay: boolean = false;	// 是否正在播放
+  playMode: 'auto' | 'repeat' | 'random' = 'auto';	// 播放模式
+  playList: SongItemType[] = [];	// 播放列表
+}

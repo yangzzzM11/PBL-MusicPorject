@@ -4,8 +4,10 @@ import { SongItemType } from '../models/Index';
 @Component
 export default struct Find {
   @State songs: SongItemType[] = [];
+  router = this.getUIContext().getRouter();
   async aboutToAppear() {
     this.songs = await getSongList() as SongItemType[];
+
   }
   build() {
     Column() {
@@ -39,6 +41,7 @@ export default struct Find {
                     .fontColor('#808082')
                 }
                 .width('100%')
+
               }
               .layoutWeight(1)
               Image($r('app.media.ic_more'))
@@ -47,6 +50,10 @@ export default struct Find {
             }
             .width('100%')
             .margin({ bottom: 10 })
+            .onClick(() => { //新增
+              this.router.pushUrl({ url: 'pages/Play' }); //这里用的pushUrl
+            })
+
           }
         })
       }

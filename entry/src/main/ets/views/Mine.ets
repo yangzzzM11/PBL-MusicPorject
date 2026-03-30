@@ -17,7 +17,7 @@ export default struct Mine {
       Column() {
         GridRow({ gutter: 8 }) {
           ForEach(this.columnList, (item: number) => {
-            GridCol({ span: 3 }) {
+            GridCol({ span: 1 }) {
               SongCard({ songs: this.showList[item] })
             }
           })
@@ -56,15 +56,15 @@ export default struct Mine {
               .fontColor('#555')
               .margin({ right: 12 })
               .fontSize(14)
-            Text('双子座')
+            Text('天秤座')
               .fontColor('#555')
               .margin({ right: 12 })
               .fontSize(14)
-            Text('北京')
+            Text('成都')
               .fontColor('#555')
               .margin({ right: 12 })
               .fontSize(14)
-            Text('歌龄·2年')
+            Text('歌龄·5年')
               .fontColor('#555')
               .margin({ right: 12 })
               .fontSize(14)
@@ -78,7 +78,7 @@ export default struct Mine {
               .fontColor('#555')
               .margin({ right: 12 })
               .fontSize(14)
-            Text('167万 赞')
+            Text('666万 赞')
               .fontColor('#555')
               .margin({ right: 12 })
               .fontSize(14)
