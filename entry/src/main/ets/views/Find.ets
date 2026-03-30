@@ -1,5 +1,6 @@
 import { getSongList } from '../apis';
 import { SongItemType } from '../models/Index';
+import AVPlayerManager from '../utils/AVPlayerManager';
 
 @Component
 export default struct Find {
@@ -51,6 +52,7 @@ export default struct Find {
             .width('100%')
             .margin({ bottom: 10 })
             .onClick(() => { //新增
+              AVPlayerManager.singPlay(item);
               this.router.pushUrl({ url: 'pages/Play' }); //这里用的pushUrl
             })
 
