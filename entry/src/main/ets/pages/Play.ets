@@ -198,6 +198,10 @@ struct Play {
                 Image($r('app.media.ic_prev'))
                   .fillColor(Color.White)
                   .width(30)
+                  .onClick(() => { //新增
+                    AVPlayerManager.prevPlay();
+                  })
+
                 // “播放/暂停”按钮
                 Image(this.playState.isPlay ? $r('app.media.ic_paused') : $r('app.media.ic_play'))
                   .fillColor(Color.White)
@@ -213,6 +217,9 @@ struct Play {
                 Image($r('app.media.ic_next'))
                   .fillColor(Color.White)
                   .width(30)
+                  .onClick(() => {//新增
+                    AVPlayerManager.nextPlay();
+                  })
                 // “播放列表”按钮
                 Image($r('app.media.ic_song_list'))
                   .fillColor(Color.White)
