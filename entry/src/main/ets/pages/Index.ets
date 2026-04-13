@@ -27,6 +27,7 @@ struct Index {
         .fontColor(this.isActive == item.name ? '#e4608b' : '#6da8a5') // 文字高亮
     }
   }
+
   build() {
     Tabs({ barPosition: BarPosition.End }) {
       ForEach(this.tabData, (item: TabType) => {

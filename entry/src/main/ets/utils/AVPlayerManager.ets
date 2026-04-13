@@ -88,6 +88,34 @@ export default class AVPlayerManager {
     AppStorage.setOrCreate(SONG_KEY, AVPlayerManager.currentSong);
 
   }
+  // 删除播放列表中的歌曲
+  static remove(index: number) {
+    // 判断要删除的歌曲是否是当前正在播放的歌曲
+    if (index == AVPlayerManager.currentSong.playIndex) {
+      // 判断播放列表中是否有超过1首的歌曲
+      if (AVPlayerManager.currentSong.playList.length > 1) {
+        // 删除播放列表中的歌曲
+        AVPlayerManager.currentSong.playList.splice(index, 1);
+        // 设置要播放的歌曲，如果删除的是最后一首，则设置第一首为要播放的歌曲
+        AVPlayerManager.currentSong.playIndex = (AVPlayerManager.currentSong.playIndex + AVPlayerManager.currentSong.playList.length) % AVPlayerManager.currentSong.playList.length;
+        // 播放歌曲
+        AVPlayerManager.singPlay(AVPlayerManager.currentSong.playList[AVPlayerManager.currentSong.playIndex]);
+      } else {
+        // 删除歌曲后，播放列表中已经没有歌曲了，重置播放器
+        AVPlayerManager.currentSong = new PlayState();
+      }
+    } else {
+      // 判断要删除的歌曲是否在当前正在播放的歌曲的前面
+      if (index < AVPlayerManager.currentSong.playIndex) {
+        // 由于前面的歌曲删除了，所以当前正在播放的歌曲的索引要减1
+        AVPlayerManager.currentSong.playIndex--;
+      }
+      // 删除播放列表中的歌曲
+      AVPlayerManager.currentSong.playList.splice(index, 1);
+    }
+    AppStorage.setOrCreate(SONG_KEY, AVPlayerManager.currentSong);
+  }
+
 
   static async init() {//静态方法
     if (!AVPlayerManager.player) {

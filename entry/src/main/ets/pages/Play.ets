@@ -5,11 +5,26 @@ import AVPlayerManager from '../utils/AVPlayerManager';
 @Entry
 @Component
 struct Play {
+  @Builder
+  deleteButton(index: number) {
+    Button('删除')
+      .backgroundColor('#ec5c87')
+      .fontColor('#fff')
+      .width(80)
+      .height('100%')
+      .type(ButtonType.Normal)
+      .onClick(() => {
+        if (AVPlayerManager.currentSong.playList.length <= 1) {
+          this.router.back();
+        }
+        AVPlayerManager.remove(index);
+      })
+  }
   @State panelHeight: string = '0%';
   @StorageLink(SONG_KEY) // changed from @State
   @Watch('changeAnimate')
   playState: PlayState = new PlayState();
-
+  router = this.getUIContext().getRouter();
   @State rotateAngle: number = 0;
   animatorResult = this.getUIContext().createAnimator({
     duration: 1000 * 15,
@@ -304,8 +319,12 @@ struct Play {
                         .fontColor(this.playState.playIndex == index ? '#f04c7e' : Color.Gray)
                     }
                     .layoutWeight(1)
+                    .onClick(() => {
+                      AVPlayerManager.singPlay(this.playState.playList[index]);
+                    })
                     .alignItems(HorizontalAlign.Start)
                     .justifyContent(FlexAlign.Center)
+
                   }
                   .layoutWeight(1)
                   Image($r('app.media.ic_more'))
@@ -317,6 +336,7 @@ struct Play {
                 .alignItems(VerticalAlign.Center)
               }
               .border({ width: { bottom: 1 }, color: '#12ec5c87' })
+              .swipeAction({  end: this.deleteButton(index) })
             })
           }
           .layoutWeight(1)
